@@ -1,29 +1,21 @@
 # craftyBlankState
 
-[![CI Status](https://img.shields.io/travis/craftycoders/craftyBlankState.svg?style=flat)](https://travis-ci.org/craftycoders/craftyBlankState)
-[![Version](https://img.shields.io/cocoapods/v/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
-[![License](https://img.shields.io/cocoapods/l/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
-[![Platform](https://img.shields.io/cocoapods/p/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
 
-## Example
+CraftyBlankState lets you elegantly handle blank screens for iOS apps. Makes your iOS app look profressionally done even though the reality is you just finished iOS Developement 101 yesterday. Fully customizable to handle different cases with built-in defaults. Completely adaptive to all devices and screen sizes.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
-
+ 
 craftyBlankState is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
-
+ 
 ```ruby
 pod 'craftyBlankState'
 ```
 
-## Author
-
-craftycoders, lyle@craftycoders.io
-
 ## License
 
 craftyBlankState is available under the MIT license. See the LICENSE file for more info.
+
+
+

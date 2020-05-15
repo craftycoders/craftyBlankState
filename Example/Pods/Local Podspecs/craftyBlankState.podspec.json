@@ -1,0 +1,22 @@
+{
+  "name": "craftyBlankState",
+  "version": "0.1.0",
+  "summary": "A short description of craftyBlankState.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/craftycoders/craftyBlankState",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "craftycoders": "lyle@craftycoders.io"
+  },
+  "source": {
+    "git": "https://github.com/craftycoders/craftyBlankState.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "craftyBlankState/Classes/**/*"
+}
