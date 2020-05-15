@@ -25,9 +25,6 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D9B4EF838BA0EAF26E1E60D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DE58CC32246F1639000F2439 /* CraftyBlankStateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftyBlankStateable.swift; sourceTree = "<group>"; };
-		DE58CC34246F1687000F2439 /* CraftyBlankStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftyBlankStateView.swift; sourceTree = "<group>"; };
-		DE58CC3D246F1847000F2439 /* craftyBlankState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = craftyBlankState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE58CC3F246F1847000F2439 /* craftyBlankState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = craftyBlankState.h; sourceTree = "<group>"; };
 		DE58CC40246F1847000F2439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E583C37C407B9D9DED9853B5 /* Pods-craftyBlankState_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-craftyBlankState_Tests.release.xcconfig"; path = "Target Support Files/Pods-craftyBlankState_Tests/Pods-craftyBlankState_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,31 +113,6 @@
 				E583C37C407B9D9DED9853B5 /* Pods-craftyBlankState_Tests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		DE58CC31246F15D9000F2439 /* craftyBlankState */ = {
-			isa = PBXGroup;
-			children = (
-				DE58CC37246F1699000F2439 /* Protocols */,
-				DE58CC36246F168D000F2439 /* Views */,
-			);
-			path = craftyBlankState;
-			sourceTree = "<group>";
-		};
-		DE58CC36246F168D000F2439 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DE58CC34246F1687000F2439 /* CraftyBlankStateView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DE58CC37246F1699000F2439 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				DE58CC32246F1639000F2439 /* CraftyBlankStateable.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		DE58CC3E246F1847000F2439 /* craftyBlankState */ = {
@@ -271,13 +243,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-craftyBlankState_Tests/Pods-craftyBlankState_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/craftyBlankState/craftyBlankState.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/craftyBlankState.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -381,6 +351,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -426,6 +397,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -447,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/craftyBlankState_Example.app/craftyBlankState_Example";
 			};
 			name = Debug;
@@ -465,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/craftyBlankState_Example.app/craftyBlankState_Example";
 			};
 			name = Release;
