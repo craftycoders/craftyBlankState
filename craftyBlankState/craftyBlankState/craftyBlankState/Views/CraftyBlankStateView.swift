@@ -1,9 +1,9 @@
 //
-//  CraftBlankStateView.swift
-//  craftyBlankState_Tests
+//  CraftyBlankStateView.swift
+//  craftyBlankState
 //
 //  Created by Lyle Jover on 5/15/20.
-//  Copyright © 2020 CocoaPods. All rights reserved.
+//  Copyright © 2020 Lyle Jover. All rights reserved.
 //
 
 import UIKit

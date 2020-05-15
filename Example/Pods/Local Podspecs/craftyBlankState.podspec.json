@@ -1,8 +1,8 @@
 {
   "name": "craftyBlankState",
   "version": "0.1.0",
-  "summary": "A short description of craftyBlankState.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Elegantly handle blank screens for iOS apps",
+  "description": "CraftyBlankState lets you elegantly handle blank screens for iOS apps. Makes your iOS app look profressionally done even though the reality is you just finished iOS Developement 101 yesterday. Fully customizable to handle different cases with built-in defaults. Completely adaptive to all devices and screen sizes.",
   "homepage": "https://github.com/craftycoders/craftyBlankState",
   "license": {
     "type": "MIT",
@@ -18,5 +18,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "craftyBlankState/Classes/**/*"
+  "source_files": "craftyBlankState/Classes/**/*",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }
