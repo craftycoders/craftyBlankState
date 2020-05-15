@@ -1,0 +1,6 @@
+framework module craftyBlankState {
+  umbrella header "craftyBlankState-umbrella.h"
+
+  export *
+  module * { export * }
+}
