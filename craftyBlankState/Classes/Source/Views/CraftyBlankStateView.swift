@@ -15,7 +15,12 @@ public class CraftyBlankStateView: UIView {
     
     var defaultImage: UIImage = UIImage()
     var defaultImageColor: UIColor = UIColor(hex: "#CC0000") ?? UIColor.red
-    var defaultFont: UIFont = UIFont.systemFont(ofSize: 17, weight: .medium)
+    var defaultFont: UIFont {
+        guard let font = dataSource?.font(in: self) else { return UIFont.systemFont(ofSize: 17, weight: .medium) }
+        return font
+    }
+    
+    public var dataSource: CraftyBlankStateDataSource?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -52,15 +57,16 @@ public class CraftyBlankStateView: UIView {
         self.imgView.tintColor = defaultImageColor
     }
     
-    public func set(image: UIImage?, msg: String, font: UIFont?) {
-        if let _ = image {
+    
+    public func refresh() {
+        if let image = dataSource?.image(in: self) {
             self.imgView.image = image
         } else {
             setDefaultImage()
         }
         
-        self.msgLbl.font = font == nil ? defaultFont : font
-        self.msgLbl.text = msg
+        self.msgLbl.font = defaultFont
+        self.msgLbl.text = dataSource?.message(in: self)
     }
 
 }
