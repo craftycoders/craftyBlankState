@@ -18,7 +18,6 @@ class TableOfContentsSpec: QuickSpec {
                 }
             }
             
-            
             context("when it has a dataSource") {
                 let view = CraftyBlankStateView()
                 beforeEach {
