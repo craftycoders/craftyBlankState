@@ -4,6 +4,11 @@
 
 osx_image: xcode11.4
 language: swift
+cache: cocoapods
+podfile: Example/Podfile
+before_install:
+- gem install cocoapods
+- pod install --project-directory=Example
 xcode_project: Example/craftyBlankState.xcodeproj # path to your xcodeproj folder
 xcode_scheme: craftyBlankState-Example
 xcode_destination: platform=iOS Simulator,OS=13.4.1,name=iPhone SE (2nd generation)
