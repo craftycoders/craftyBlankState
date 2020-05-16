@@ -7,10 +7,13 @@
 
 import Foundation
 
-protocol CraftyBlankStateDataSource {
-   
+public protocol CraftyBlankStateDataSource {
+    func image(in blankStateView: CraftyBlankStateView) -> UIImage?
+    func message(in blankStateView: CraftyBlankStateView) -> String
+    func font(in blankStateView: CraftyBlankStateView) -> UIFont
 }
 
-public protocol CraftyBlankStatable {
+public protocol CraftyBlankStatable: CraftyBlankStateDataSource {
     var blankStateView: CraftyBlankStateView! { get set }
 }
+
