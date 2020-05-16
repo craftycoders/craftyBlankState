@@ -15,7 +15,7 @@ class ViewController: UIViewController, CraftyBlankStatable {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = blankStateView
-        blankStateView.setBackgroundColor(color: UIColor.blue)
+        //blankStateView.set(image: <#T##UIImage?#>, msg: <#T##String#>, font: <#T##UIFont?#>)
     }
 
 }
