@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'craftyBlankState'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Elegantly handle blank screens for iOS apps'
 
 # This description is used to generate tags and improve search results.
@@ -31,9 +31,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'craftyBlankState/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'craftyBlankState' => ['craftyBlankState/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'craftyBlankState' => ['craftyBlankState/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
