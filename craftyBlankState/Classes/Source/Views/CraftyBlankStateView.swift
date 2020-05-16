@@ -52,7 +52,10 @@ public class CraftyBlankStateView: UIView {
     }
     
     fileprivate func setDefaultImage() {
-        defaultImage = UIImage(named: "sadFace", in: Bundle(for: type(of: self)), compatibleWith: nil)!
+        guard let image = UIImage(named: "sadFace", in: Bundle(for: CraftyBlankStateView.self), compatibleWith: nil) else {
+          fatalError("Missing default image...")
+        }
+        defaultImage = image
         self.imgView.image = defaultImage.withRenderingMode(.alwaysTemplate)
         self.imgView.tintColor = defaultImageColor
     }
