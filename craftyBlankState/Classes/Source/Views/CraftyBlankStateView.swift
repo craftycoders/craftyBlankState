@@ -44,15 +44,16 @@ public class CraftyBlankStateView: UIView {
     }
     
     fileprivate func loadViewFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let bundle = Bundle(for: CraftyBlankStateView.self)
+        let nib = UINib(nibName: String(describing: CraftyBlankStateView.self), bundle: bundle)
         let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
 
         return nibView
     }
     
     fileprivate func setDefaultImage() {
-        guard let image = UIImage(named: "sadFace", in: Bundle(for: CraftyBlankStateView.self), compatibleWith: nil) else {
+        let bundle = Bundle(for: CraftyBlankStateView.self)
+        guard let image = UIImage(named: "sadFace", in: bundle, compatibleWith: nil) else {
           fatalError("Missing default image...")
         }
         defaultImage = image

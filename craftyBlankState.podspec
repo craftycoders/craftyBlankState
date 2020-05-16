@@ -30,10 +30,7 @@ Pod::Spec.new do |s|
   s.swift_versions = '5.0'
 
   s.source_files = 'craftyBlankState/Classes/**/*'
-  
-  s.resource_bundles = {
-     'craftyBlankState' => ['craftyBlankState/Assets/*.png']
-  }
+  s.resources = 'craftyBlankState/Assets/*.xcassets'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
