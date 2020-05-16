@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol CraftyBlankStateDataSource {
+   
+}
+
 public protocol CraftyBlankStatable {
     var blankStateView: CraftyBlankStateView! { get set }
 }
