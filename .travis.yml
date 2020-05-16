@@ -4,6 +4,6 @@
 
 osx_image: xcode11.4
 language: swift
-xcode_project: craftyBlankState.xcodeproj # path to your xcodeproj folder
+xcode_project: Example/craftyBlankState.xcodeproj # path to your xcodeproj folder
 xcode_scheme: craftyBlankState_Tests
 xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone X
