@@ -6,10 +6,13 @@
 
 CraftyBlankState lets you elegantly handle blank screens for iOS apps. Makes your iOS app look profressionally done even though the reality is you just finished iOS Developement 101 yesterday. Fully customizable to handle different cases with built-in defaults. Completely adaptive to all devices and screen sizes.
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 ## Requirements
 - iOS 12.0
 - Swift 5.0
-
 
 ## Installation
  
