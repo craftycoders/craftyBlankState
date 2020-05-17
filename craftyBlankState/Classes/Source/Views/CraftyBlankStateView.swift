@@ -15,6 +15,7 @@ public class CraftyBlankStateView: UIView {
     
     var defaultImage: UIImage = UIImage()
     var defaultImageColor: UIColor = UIColor(hex: "#CC0000") ?? UIColor.red
+    var defaultMessage: String = "Looks like there's nothing here. Come back later."
     var defaultFont: UIFont {
         guard let font = dataSource?.font(in: self) else { return UIFont.systemFont(ofSize: 17, weight: .medium) }
         return font
@@ -39,7 +40,7 @@ public class CraftyBlankStateView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = true
         addSubview(view)
         setDefaultImage()
-        self.msgLbl.text = "Looks like there's nothing here. Come back later."
+        self.msgLbl.text = defaultMessage
         self.msgLbl.font = defaultFont
     }
     
@@ -70,7 +71,7 @@ public class CraftyBlankStateView: UIView {
         }
         
         self.msgLbl.font = defaultFont
-        self.msgLbl.text = dataSource?.message(in: self)
+        self.msgLbl.text = dataSource?.message(in: self) ?? defaultMessage
     }
 
 }

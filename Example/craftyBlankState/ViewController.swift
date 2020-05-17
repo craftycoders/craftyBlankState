@@ -19,7 +19,7 @@ class ViewController: UIViewController, CraftyBlankStatable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        blankStateView.dataSource = self
+        //blankStateView.dataSource = self
         self.view = blankStateView
         blankStateView.refresh()
     }
