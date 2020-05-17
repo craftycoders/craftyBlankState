@@ -9,6 +9,9 @@ podfile: Example/Podfile
 before_install:
 - gem install cocoapods
 - pod install --project-directory=Example
-xcode_project: Example/craftyBlankState.xcodeproj # path to your xcodeproj folder
-xcode_scheme: craftyBlankState-Example
-xcode_destination: platform=iOS Simulator,OS=13.4.1,name=iPhone SE (2nd generation)
+#xcode_workspace: Example/craftyBlankState.xcworkspace
+#xcode_scheme: craftyBlankState-Example
+#xcode_destination: platform=iOS Simulator,OS=13.4.1,name=iPhone SE (2nd generation)
+script:
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/${POD_NAME}.xcworkspace -scheme ${POD_NAME}-Example -sdk iphonesimulator13.4.1 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint
