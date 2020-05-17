@@ -1,7 +1,14 @@
 # craftyBlankState
-
+[![CI Status](https://img.shields.io/travis/craftycoders/craftyBlankState.svg?style=flat)](https://travis-ci.org/craftycoders/craftyBlankState)
+[![Version](https://img.shields.io/cocoapods/v/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
+[![License](https://img.shields.io/cocoapods/l/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
+[![Platform](https://img.shields.io/cocoapods/p/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
 
 CraftyBlankState lets you elegantly handle blank screens for iOS apps. Makes your iOS app look profressionally done even though the reality is you just finished iOS Developement 101 yesterday. Fully customizable to handle different cases with built-in defaults. Completely adaptive to all devices and screen sizes.
+
+## Requirements
+- iOS 12.0
+- Swift 5.0
 
 
 ## Installation
