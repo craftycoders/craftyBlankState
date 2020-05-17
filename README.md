@@ -35,6 +35,7 @@ Step 3: Tag your view as the data source and call refresh. That's it! If the dat
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
+    self.view = blankStateView
     blankStateView.dataSource = self
     blankStateView.refresh()
 }
