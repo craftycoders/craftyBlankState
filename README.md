@@ -1,5 +1,5 @@
 # craftyBlankState
-[![CI Status](https://img.shields.io/travis/craftycoders/craftyBlankState.svg?style=flat)](https://travis-ci.org/craftycoders/craftyBlankState)
+[![CI Status](https://img.shields.io/travis/craftycoders/craftyBlankState.svg?style=flat)](https://travis-ci.com/craftycoders/craftyBlankState.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
 [![License](https://img.shields.io/cocoapods/l/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
 [![Platform](https://img.shields.io/cocoapods/p/craftyBlankState.svg?style=flat)](https://cocoapods.org/pods/craftyBlankState)
