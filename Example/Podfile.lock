@@ -1,12 +1,12 @@
 PODS:
-  - craftyBlankState (0.1.3)
-  - Nimble (7.3.4)
-  - Quick (1.2.0)
+  - craftyBlankState (1.0.0)
+  - Nimble (8.0.9)
+  - Quick (2.2.0)
 
 DEPENDENCIES:
   - craftyBlankState (from `../`)
-  - Nimble (~> 7.0)
-  - Quick (~> 1.2.0)
+  - Nimble
+  - Quick
 
 SPEC REPOS:
   trunk:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  craftyBlankState: fcff6cec7480e4dc042feba05a2dc7c76fb0cf21
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  craftyBlankState: 0202aafc4a3654c9cedafac0e3df60743090b5c7
+  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
 
-PODFILE CHECKSUM: 9ce2d7eacee6e30175dc636604981a9c4af808e6
+PODFILE CHECKSUM: 1a1d6f8e7f3f318c8f0276966d5dcfb32293928a
 
 COCOAPODS: 1.9.1
